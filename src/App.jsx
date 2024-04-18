@@ -1,11 +1,9 @@
-
-
-
+import bg from './assets/Neyland.png'
 function App() {
 
 
   return (
-      <div className="text-5xl font-bold">
+      <div style={{backgroundImage: `url(${bg})`}} className="h-screen w-screen">
         home component
       </div>
   )
