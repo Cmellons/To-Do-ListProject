@@ -1,9 +1,12 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+// todoSlice.js
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   todos: [],
   toggleForm: true,
   todoUpdate: {},
+  // Add a new field to store contact form data
+  contactFormData: {},
 };
 
 export const todoSlice = createSlice({
@@ -30,6 +33,10 @@ export const todoSlice = createSlice({
     todoAdded: (state, action) => {
       state.todos = [...state.todos, action.payload];
     },
+    // Define a new action to handle sending contact form data
+    sendContactForm: (state, action) => {
+      state.contactFormData = action.payload;
+    },
   },
 });
 
@@ -39,6 +46,7 @@ export const {
   todosCleared,
   todoAdded,
   todoUpdated,
+  sendContactForm, // Include the new action in exports
 } = todoSlice.actions;
 
 export default todoSlice.reducer;

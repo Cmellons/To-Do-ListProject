@@ -11,7 +11,7 @@ const SingleTodoCard = (props) => {
   // const toggleComplete = useSelector((state) => state.todos.toggleComplete);
 
   return (
-    <div className="flex justify-between bg-red-100 py-2 rounded shadow">
+    <div className="flex justify-between bg-white-100 py-2 rounded shadow">
       <div className="px-4">
         <h1
           className={
