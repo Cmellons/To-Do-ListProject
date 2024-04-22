@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "./ContactForm"; // Import your contact form component
+import ContactForm from "./ContactForm"; 
 const ContactPage = () => {
     const goBack = () => {
       window.history.back();

@@ -8,8 +8,7 @@ import { formToggled, todoDeleted } from "../store/features/todo/todoSlice";
 const SingleTodoCard = (props) => {
   const [toggleComplete, setToggleComplete] = useState(false);
   const dispatch = useDispatch();
-  // const toggleComplete = useSelector((state) => state.todos.toggleComplete);
-
+ 
   return (
     <div className="flex justify-between bg-white-100 py-2 rounded shadow">
       <div className="px-4">
